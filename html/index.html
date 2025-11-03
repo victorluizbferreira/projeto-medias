@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Média</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f0fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(128, 0, 128, 0.25);
+      width: 350px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #5a2d82;
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      text-align: left;
+      color: #4b2c6f;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 2px solid #7a4ea0;
+      border-radius: 10px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1rem;
+      background-color: white;
+      border: 3px solid #7a4ea0;
+      color: #7a4ea0;
+      font-weight: 700;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #7a4ea0;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Calculadora de Média</h2>
+    <form action="/resultado" method="POST">
+      <label for="nome">Nome do Aluno:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="nota1">Nota 1:</label>
+      <input type="number" id="nota1" name="nota1" min="0" max="10" step="0.1" required>
+
+      <label for="nota2">Nota 2:</label>
+      <input type="number" id="nota2" name="nota2" min="0" max="10" step="0.1" required>
+
+      <input type="submit" value="Calcular Média">
+    </form>
+  </div>
+</body>
+</html>

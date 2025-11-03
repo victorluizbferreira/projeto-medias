@@ -1,0 +1,24 @@
+{
+  "name": "projeto-medias",
+  "version": "1.0.0",
+  "description": "Victor Luiz Barreira Ferreira Lima",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorluizbferreira/projeto-medias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorluizbferreira/projeto-medias/issues"
+  },
+  "homepage": "https://github.com/victorluizbferreira/projeto-medias#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  }
+}
